@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #1c1c2e;
+  color: #fff;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.todo-container {
+  max-width: 600px;
+  background-color: #2e2e4d;
+  margin: 0 auto;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.task-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.task-input input,
+.task-input input[type="datetime-local"] {
+  flex: 1 1 200px;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.task-input button {
+  padding: 0.6rem 1.2rem;
+  background-color: #00bfa6;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  flex: 1 1 100px;
+}
+
+.task-list {
+  list-style: none;
+}
+
+.task-item {
+  background-color: #3b3b5c;
+  margin-bottom: 0.8rem;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.task-actions {
+  display: flex;
+  align-items: center;
+}
+
+.task-actions button {
+  margin-left: 0.5rem;
+  background: none;
+  border: none;
+  color: #00bfa6;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
